@@ -1,0 +1,22 @@
+.single{
+    display: flex;
+}
+
+.single_left{
+    width:80%;
+}
+
+.single_right{
+  width: 30%;
+}
+
+@media screen and (max-width:1280px){
+    .single_right{
+        display: none;
+    }
+
+    .single_left{
+     margin-top: 20px;
+        width:100%;
+    }
+}

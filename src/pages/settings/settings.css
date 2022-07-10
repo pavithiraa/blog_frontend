@@ -1,0 +1,124 @@
+.settings {
+     height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+ 
+  }
+  
+  .settingsWrapper {
+    width: 500px;
+    /* height: 80vh; */
+    background-color: rgb(255, 253, 253);
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .settingsTitle {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .settingsTitleUpdate {
+    font-size: 30px;
+    /* margin-bottom: 18px; */
+    color:  rgb(35, 27, 102);
+  }
+  
+  .settingsTitleDelete {
+    color: red;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .settingsForm {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  
+  .settingsPP {
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .settingsPP > img {
+    border: 2px solid rgb(35, 27, 102);
+    height: 100px;
+    width:100px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+
+  
+  .settingsPPButton:focus {
+    outline-style: none;
+  }
+  
+  .settingsForm > label {
+    color:rgb(14, 60, 214);
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  
+  .settingsPPInput {
+    width: 100%;
+  }
+  
+  .settingsForm > input {
+    color: rgb(53, 51, 51);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(14, 60, 214);
+  }
+  
+  .settingsSubmitButton {
+    align-self: center;
+    width: 150px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(14, 60, 214);
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .settingsSubmitButton:hover {
+    background-color: rgb(48, 91, 231);
+  }
+
+  @media screen and (max-width:1000px){
+    .settings{
+      background-color: white;
+    }
+
+    .settingsWrapper{
+      background:linear-gradient(rgb(41, 41, 87),rgb(39, 52, 88),rgb(27, 27, 49));
+      width: 400px;
+    }
+    .settingsForm > input{
+      border-bottom: none; 
+    }
+
+    .settingsForm > label{
+      color:white;
+    }
+    .settingsTitleUpdate {
+      font-size: 25px;
+      /* margin-bottom: 18px; */
+      color: white;
+    }
+  }

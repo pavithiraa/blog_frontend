@@ -1,0 +1,89 @@
+.login {
+    height: calc(100vh - 75px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .login_page{
+    background-color: #fff;
+    width:25%;
+    border-radius: 10px;
+    opacity:1;
+    padding: 50px;
+    margin: 20px;
+  }
+  
+  .loginTitle {
+    font-size: 50px;
+    color:rgb(97, 86, 86);
+    }
+  
+  .loginForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .loginForm > label {
+    color:rgb(97, 86, 86);
+    margin: 10px 0;
+  }
+  
+  .loginInput {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid blue;
+    border-radius: 5px;
+  }
+  
+  .loginInput:focus {
+    outline: none;
+  }
+  
+  .loginButton {
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: rgb(58, 56, 185);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+  .loginButton:disabled{
+    cursor:not-allowed;
+    background-color: rgb(84, 82, 224);
+  }
+
+  .loginRegisterButton {
+    display: none;
+  }
+
+  .link {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  @media screen and (max-width:1000px){
+    .login{
+      background:white;
+    }
+    .login_page{
+      background:linear-gradient(rgb(41, 41, 87),rgb(39, 52, 88),rgb(27, 27, 49));
+      width:75%;
+      padding: 35px;
+      margin: 10px;
+    }
+    .loginForm > label{
+      color:white;
+    }
+
+    .loginTitle{
+      font-size: 30px;
+      color:white;
+    }
+  }
